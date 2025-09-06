@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="RVC hosts a wide range of events that empower students, promote dialogue, and serve the community."/>
+  <meta name="keywords" content="RVC, Events, Hawassa University, forums, charity, book review, entertainment, outdoor"/>
+  <title>Events – RVC | ዝግጅቶች</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+
+  <!-- NAVIGATION (same as other pages) -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logo.png" alt="RVC Logo" class="logo"/>
+        <span class="brand-text" data-en="RVC" data-am="አርቪሲ">RVC</span>
+      </a>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" data-en="Home" data-am="መነሻ">Home</a></li>
+        <li><a href="about.html" data-en="About" data-am="ስለ እኛ">About</a></li>
+        <li class="dropdown">
+          <a href="#" data-en="Wings" data-am="ክንፎች">Wings <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="discussion.html" data-en="Discussion" data-am="ውይይት">Discussion</a></li>
+            <li><a href="charity.html" data-en="Charity" data-am="በጎ አድራጎት">Charity</a></li>
+            <li><a href="book-review.html" data-en="Book Review" data-am="መጽሐፍ ግምገማ">Book Review</a></li>
+            <li><a href="entertainment.html" data-en="Entertainment" data-am="መዝናኛ">Entertainment</a></li>
+          </ul>
+        </li>
+        <li><a href="events.html" data-en="Events" data-am="ዝግጅቶች">Events</a></li>
+        <li><a href="partners.html" data-en="Partners" data-am="አጋሮች">Partners</a></li>
+        <li><a href="contact.html" data-en="Contact" data-am="አድራሻ">Contact</a></li>
+        <li><a href="join.html" class="btn-join" data-en="Join Us" data-am="ተቀላቀሉን">Join Us</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="langToggle" class="lang-btn">
+          <span class="lang-text">EN</span> <i class="fas fa-globe"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero events-hero">
+    <div class="container">
+      <h1 class="page-title" data-en="Events" data-am="ዝግጅቶች">Events</h1>
+      <p class="page-intro"
+         data-en="RVC hosts a wide range of events that empower students, promote dialogue, and serve the community. From weekly forums to charity outreach, cultural celebrations, and outdoor adventures, our events bring students together to create impact."
+         data-am="የምክንያታዊ ባለ-ራዕዮች በተማሪዎችን ለማበረታታት፣ ውይይትን ለማስፋት፣ ማህበረሰብን ለመማገር እና በተፈጥሮ ውስጥ በመመላለስ የተለያዩ ዝግጅቶችን ይዘጋጃል።">
+        RVC hosts a wide range of events…
+      </p>
+    </div>
+  </section>
+
+  <!-- CATEGORY FILTER TABS -->
+  <section class="event-categories">
+    <div class="container">
+      <div class="tab-list">
+        <button class="tab-btn active" data-cat="all"
+                data-en="All" data-am="ሁሉም">All</button>
+        <button class="tab-btn" data-cat="discussion"
+                data-en="🗣️ Discussion" data-am="🗣️ ውይይት">🗣️ Discussion</button>
+        <button class="tab-btn" data-cat="charity"
+                data-en="❤️ Charity" data-am="❤️ በጎ አድራጎት">❤️ Charity</button>
+        <button class="tab-btn" data-cat="book"
+                data-en="📚 Book Review" data-am="📚 መጽሐፍ ግምገማ">📚 Book Review</button>
+        <button class="tab-btn" data-cat="entertainment"
+                data-en="🎭 Entertainment" data-am="🎭 መዝናኛ">🎭 Entertainment</button>
+        <button class="tab-btn" data-cat="outdoor"
+                data-en="🌄 Outdoor" data-am="🌄 ውጪ">🌄 Outdoor</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS (Timeline) -->
+  <section class="upcoming-events">
+    <div class="container">
+      <h2 class="section-title" data-en="Upcoming Events" data-am="የሚመጡ ዝግጅቶች">Upcoming Events</h2>
+      <div class="timeline" id="eventsTimeline">
+
+        <!-- Discussion -->
+        <div class="timeline-item cat-discussion animate-card">
+          <div class="timeline-icon">🗣️</div>
+          <div class="timeline-content">
+            <span class="event-date">Sat, Jun 10</span>
+            <h3 data-en="Weekly Forum" data-am="ሳምንታዊ ውይይት">Weekly Forum</h3>
+            <p data-en="Saturday night debate on current social issues."
+               data-am="ቅዳሜ ሌሊት በዘመናዊ ማህበረሰብ ጉዳዮች ላይ ክርክር።">
+              Saturday night debate…
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item cat-discussion animate-card">
+          <div class="timeline-icon">🗣️</div>
+          <div class="timeline-content">
+            <span class="event-date">Wed, Jun 14</span>
+            <h3 data-en="Life Exemplary Talk" data-am="የታዋቂ ሰዎች የህይወት ተሞክሮ">Life Exemplary Talk</h3>
+            <p data-en="Inspiring journey of role models and successful figures."
+               data-am="አርአያና ስኬታማ ሰዎች ህይወታዊ ጉዞ።">
+              Inspiring journey of role models…
+            </p>
+          </div>
+        </div>
+
+        <!-- Charity -->
+        <div class="timeline-item cat-charity animate-card">
+          <div class="timeline-icon">❤️</div>
+          <div class="timeline-content">
+            <span class="event-date">Mon, Jun 12</span>
+            <h3 data-en="Blood Donation Drive" data-am="የደም ስጦታ ዘመቻ">Blood Donation Drive</h3>
+            <p data-en="Campus blood drive with Red Cross partnership."
+               data-am="ከቀይ መስቀል ጋር የደም ስጦታ።">
+              Campus blood drive…
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item cat-charity animate-card">
+          <div class="timeline-icon">❤️</div>
+          <div class="timeline-content">
+            <span class="event-date">Thu, Jun 16</span>
+            <h3 data-en="Orphanage & Elderly Visit" data-am="ወደ ሕፃናት/ወረርሜዎች ቤት ጉብኝት">Orphanage & Elderly Visit</h3>
+            <p data-en="Visit to Mary Joy Center & Abenet Care Home."
+               data-am="ወደ Mary Joy Center እና Abenet Care Home ጉብኝት።">
+              Visit to Mary Joy & Abenet…
+            </p>
+          </div>
+        </div>
+
+        <!-- Book Review -->
+        <div class="timeline-item cat-book animate-card">
+          <div class="timeline-icon">📚</div>
+          <div class="timeline-content">
+            <span class="event-date">Fri, Jun 18</span>
+            <h3 data-en="Book Reflection Session" data-am="የመጽሐፍ ግምገማ ስብሰባ">Book Reflection Session</h3>
+            <p data-en="Group reading & reflections on selected titles."
+               data-am="ተወዳጅ መጽሐፍት ላይ የተያዙ ግምገማዎች።">
+              Group reading & reflections…
+            </p>
+          </div>
+        </div>
+
+        <!-- Entertainment -->
+        <div class="timeline-item cat-entertainment animate-card">
+          <div class="timeline-icon">🎭</div>
+          <div class="timeline-content">
+            <span class="event-date">Sun, Jun 20</span>
+            <h3 data-en="Open Mic Night" data-am="ኦፐን-ሚክ ሌሊት">Open Mic Night</h3>
+            <p data-en="Showcase your talent in poetry, music, or comedy."
+               data-am="በግጥም፣ ሙዚቃ ወይም ኮሜዲ ችሎታዎን ያሳዩ።">
+              Showcase your talent…
+            </p>
+          </div>
+        </div>
+
+        <!-- Outdoor -->
+        <div class="timeline-item cat-outdoor animate-card">
+          <div class="timeline-icon">🌄</div>
+          <div class="timeline-content">
+            <span class="event-date">Sat, Jun 25</span>
+            <h3 data-en="Youth Hiking Trip" data-am="የወጣቶች ተጓዝ ጉዞ">Youth Hiking Trip</h3>
+            <p data-en="Hiking around the nearby mountains & nature walk."
+               data-am="በቅርብ ተራሮች እና በተፈጥሮ መዳገት።">
+              Hiking around mountains…
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST HIGHLIGHTS GALLERY -->
+  <section class="past-events-gallery">
+    <div class="container">
+      <h2 class="section-title" data-en="Past Highlights" data-am="ያለፉ ጥራት">Past Highlights</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item animate-card">
+          <img src="assets/images/events/mary-joy-visit.jpg" alt="Mary Joy Visit"/>
+          <div class="gallery-caption" data-en="Mary Joy Center Visit" data-am="Mary Joy ጉብኝት">Mary Joy Center Visit</div>
+        </div>
+        <div class="gallery-item animate-card">
+          <img src="assets/images/events/blood-ampaign.jpg" alt="Blood Campaign"/>
+          <div class="gallery-caption" data-en="Blood Donation Campaigns" data-am="የደም ስጦታ ዘመቻዎች">Blood Campaigns</div>
+        </div>
+        <div class="gallery-item animate-card">
+          <img src="assets/images/events/adwa-home.jpg" alt="Adwa Home"/>
+          <div class="gallery-caption" data-en="Talita Children’s Home Visit" data-am="Talita ቤት ጉብኝት">Talita Visit</div>
+        </div>
+        <div class="gallery-item animate-card">
+          <img src="assets/images/events/peace-journey.jpg" alt="Peace Journey"/>
+          <div class="gallery-caption" data-en="Peace Journey with Red Cross" data-am="ከቀይ መስቀል ጋር የሰላም ጉብኝት">Peace Journey</div>
+        </div>
+        <div class="gallery-item animate-card">
+          <img src="assets/images/events/man-of-man.jpg" alt="Man of man"/>
+          <div class="gallery-caption" data-en="Life Exemplary Talk Show" data-am="የህይወት ተሞክሮ ትርጉሞች">Talk Show</div>
+        </div>
+        <div class="gallery-item animate-card">
+          <img src="assets/images/events/man-of-rvc.jpg" alt="Man of RVC"/>
+          <div class="gallery-caption" data-en="Youth Hiking & Nature Trip" data-am="ወጣቶች ተጓዝ ጉዞ">Hiking Trip</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-en="Ready to Join an Event?" data-am="ዝግጅት ለመቀላቀል ዝግጁ ነህ?">Ready to Join an Event?</h2>
+      <p data-en="Sign up now to be part of our vibrant RVC community." data-am="አሁን ይመዝገቡ እና የአርቪሲ ሕይወት ክፍል አባል ይሁኑ።">
+        Sign up now…
+      </p>
+      <a href="join.html" class="btn btn-primary btn-large" data-en="Join an Event" data-am="ዝግጅት ተቀላቀሉ">Join an Event</a>
+    </div>
+  </section>
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="assets/images/logo.png" alt="RVC Logo" class="footer-logo">
+                    <p class="footer-slogan" data-en="A Better Generation for a Better Ethiopia" 
+                       data-am="የተሻለ ትውልድ ለተሻለች ኢትዮጵያ">
+                        A Better Generation for a Better Ethiopia
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/RvcClub" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                      </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-en="Quick Links" data-am="ፈጣን ማስፈንጠሪያዎች">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-am="ስለ እኛ">About Us</a></li>
+                        <li><a href="events.html" data-en="Events" data-am="ዝግጅቶች">Events</a></li>
+                        <li><a href="join.html" data-en="Join Us" data-am="ተቀላቀሉን">Join Us</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-am="አድራሻ">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 data-en="Our Wings" data-am="የእኛ ክንፎች">Our Wings</h4>
+                    <ul class="footer-links">
+                        <li><a href="discussion.html" data-en="Discussion" data-am="ውይይት">Discussion</a></li>
+                        <li><a href="charity.html" data-en="Charity" data-am="በጎ አድራጎት">Charity</a></li>
+                        <li><a href="book-review.html" data-en="Book Review" data-am="መጽሐፍ ግምገማ">Book Review</a></li>
+                        <li><a href="entertainment.html" data-en="Entertainment" data-am="መዝናኛ">Entertainment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 data-en="Contact Info" data-am="የአድራሻ መረጃ">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@rvcclub.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 
+                            <span data-en="Hawassa University, Ethiopia" data-am="ሐዋሳ ዩኒቨርሲቲ፣ ኢትዮጵያ">
+                                Hawassa University, Ethiopia
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 RVC - Reasonable Visionary's Collection. 
+                   <span data-en="All rights reserved." data-am="መብቱ በሕግ የተጠበቀ ነው።">All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+      <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      RVC.updateLanguage();
+      RVC.lazyLoadImages();
+
+      // Category filter
+      const tabs = document.querySelectorAll('.tab-btn');
+      const items = document.querySelectorAll('.timeline-item');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const cat = tab.dataset.cat;
+          items.forEach(it => {
+            it.style.display = (cat === 'all' || it.classList.contains('cat-'+cat))
+              ? 'flex' : 'none';
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html

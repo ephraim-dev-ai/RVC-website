@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Join RVC - Be part of the Rational Visionaries Club at Hawassa University."/>
+  <title>Join Us – RVC | ተቀላቀሉን</title>
+
+  <!-- Google Fonts & Icons -->
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" 
+    rel="stylesheet"/>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;700&display=swap" 
+    rel="stylesheet"/>
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Override for this page’s form embed and button styling -->
+  <style>
+    :root { --shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+    /* Center container & cap width */
+    .embed-form .container {
+      max-width: 900px !important;
+      margin: 0 auto !important;
+      padding: 0 1rem !important;
+    }
+
+    /* Stretch iframe to fill that container */
+    .rvc-form-iframe {
+      display: block !important;
+      width: 100% !important;
+      min-height: 1200px !important;
+      border: none !important;
+      border-radius: 12px !important;
+      box-shadow: var(--shadow) !important;
+      background: #fff !important;
+    }
+
+    /* Center and space the buttons nicely */
+    .after-form-link .container {
+      max-width: 900px;
+      margin: 2rem auto 3rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .btn-group .btn {
+      min-width: 140px;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      text-align: center;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--primary-blue);
+      color: var(--primary-blue);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-blue);
+      color: var(--white);
+    }
+
+    .btn-primary {
+      background: var(--primary-blue);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-gold);
+      color: var(--dark);
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logo.png" alt="RVC Logo" class="logo"/>
+        <span class="brand-text" data-en="RVC" data-am="አርቪሲ">RVC</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" data-en="Home" data-am="መነሻ">Home</a></li>
+        <li><a href="about.html" data-en="About" data-am="ስለ እኛ">About</a></li>
+        <li><a href="events.html" data-en="Events" data-am="ዝግጅቶች">Events</a></li>
+        <li><a href="partners.html" data-en="Partners" data-am="አጋሮች">Partners</a></li>
+        <li><a href="contact.html" data-en="Contact" data-am="አድራሻ">Contact</a></li>
+        <li><a href="join.html" class="btn-join active" data-en="Join Us" data-am="ተቀላቀሉን">Join Us</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="langToggle" class="lang-btn">
+          <span class="lang-text">EN</span> <i class="fas fa-globe"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="page-hero join-hero">
+    <div class="container">
+      <h1 class="page-title" data-en="Join RVC" data-am="አርቪሲን ይቀላቀሉ">Join RVC</h1>
+      <p class="page-intro"
+         data-en="Be part of our vibrant student community of rational, visionary thinkers. Sign up today and start your journey!"
+         data-am="የአስተሳሰብና የባለ-ራዕዮች ንቁ የተማሪ ማህበረሰብ ክፍል ይሁኑ። ዛሬ ተመዝገቡ እና ጉዞዎን ጀምሩ።">
+        Join our vibrant student community!
+      </p>
+    </div>
+
+  </section>
+
+  <!-- FORM EMBED -->
+  <section class="embed-form">
+    <div class="container">
+      <h2 class="section-title" data-en="Membership Registration Form" data-am="የአባልነት መመዝገቢያ ቅጽ">
+        Membership Form
+      </h2>
+
+      <!-- Google Form iframe with override class -->
+      <iframe
+        class="rvc-form-iframe"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScjETc_WEi_TLLIXebraW8XFdj1nA75QAdJ9wKJ-8pQxh_dog/viewform?embedded=true"
+        title="Join RVC Form">
+        Loading…
+      </iframe>
+    </div>
+  </section>
+
+  <!-- OPTIONAL CTA BELOW FORM -->
+  <section class="after-form-link">
+    <div class="container">
+      <p data-en="After submitting, you can return home or fill out again." 
+         data-am="ቅጹን ከማስተዋል በኋላ ወደ መነሻ መመለስ ወይም ሌላ ፈተና ማሳረፍ ይችላሉ።">
+        After submitting, choose an option below:
+      </p>
+      <div class="btn-group">
+        <a href="index.html" class="btn btn-outline" data-en="Return Home" data-am="ወደ መነሻ">Return Home</a>
+        <a href="join.html" class="btn btn-primary" data-en="Fill Again" data-am="ሌላ ይመዝግቡ">Fill Again</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-bottom" style="text-align:center; padding:2rem 0;">
+      <p>&copy; 2025 RVC – <span data-en="All rights reserved." data-am="መብቱ በሕግ የተጠበቀ ነው።">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', () => RVC.updateLanguage());</script>
+</body>
+</html>

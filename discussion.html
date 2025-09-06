@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the RVC Discussion Wing, the heart of dialogue, debate, and rational thought at Hawassa University.">
+    <meta name="keywords" content="RVC, Discussion Wing, debate, talk show, Hawassa University, student forum">
+    <title>Discussion Wing - RVC | የውይይት ክፍል - አርቪሲ</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+    <!-- Navigation (Same as other pages) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.png" alt="RVC Logo" class="logo">
+                <span class="brand-text" data-en="RVC" data-am="አርቪሲ">RVC</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-am="መነሻ">Home</a></li>
+                <li><a href="about.html" data-en="About" data-am="ስለ እኛ">About</a></li>
+                <li class="dropdown">
+                    <a href="#" data-en="Wings" data-am="ክንፎች">Wings <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discussion.html" data-en="Discussion" data-am="ውይይት">Discussion</a></li>
+                        <li><a href="charity.html" data-en="Charity" data-am="በጎ አድራጎት">Charity</a></li>
+                        <li><a href="book-review.html" data-en="Book Review" data-am="መጽሐፍ ግምገማ">Book Review</a></li>
+                        <li><a href="entertainment.html" data-en="Entertainment" data-am="መዝናኛ">Entertainment</a></li>
+                    </ul>
+                </li>
+                <li><a href="events.html" data-en="Events" data-am="ዝግጅቶች">Events</a></li>
+                <li><a href="partners.html" data-en="Partners" data-am="አጋሮች">Partners</a></li>
+                <li><a href="contact.html" data-en="Contact" data-am="አድራሻ">Contact</a></li>
+                <li><a href="join.html" class="btn-join" data-en="Join Us" data-am="ተቀላቀሉን">Join Us</a></li>
+            </ul>
+            
+            <div class="lang-toggle">
+                <button id="langToggle" class="lang-btn">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-en="Discussion Wing" data-am="የውይይት ክፍል">Discussion Wing</h1>
+            <p class="page-intro" 
+               data-en="The heart of dialogue and rational thought. It provides a platform for students to exchange ideas, debate on social issues, and learn from each other." 
+               data-am="የአስተሳሰብ እና የግንዛቤ መድረክ ነው። ተማሪዎች በዚህ መድረክ አስተሳሰብ በመጋራት፣ በማወያየትና በእርስ በርስ በመማር እድል ይኖራቸዋል።">
+                The heart of dialogue and rational thought...
+            </p>
+        </div>
+    </section>
+
+    <!-- Core Activities Section -->
+    <section class="core-activities">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Core Activities" data-am="ዋና ተግባሮቻችን">Our Core Activities</h2>
+            <div class="activities-grid">
+                <div class="activity-card animate-card">
+                    <i class="fas fa-calendar-week activity-icon"></i>
+                    <h3 data-en="Weekly Forums" data-am="ሳምንታዊ ውይይት መድረኮች">Weekly Forums</h3>
+                    <p data-en="Every Saturday evening, structured debates and free discussions are held at the RVC library."
+                       data-am="ቅዳሜ ማታ በየሳምንቱ፣ የተደራጁ ክርክሮች እና ነጻ ውይይቶች በአርቪሲ ቤተ-መጽሐፍት ይካሄዳሉ።">
+                        Every Saturday evening...
+                    </p>
+                </div>
+                <div class="activity-card animate-card">
+                    <i class="fas fa-star activity-icon"></i>
+                    <h3 data-en="Life Exemplary Talk Show" data-am="የታዋቂ ሰዎች የህይወት ተሞክሮ">Life Exemplary Talk Show</h3>
+                    <p data-en="Inviting role models and successful figures to inspire students with their life journeys."
+                       data-am="ተማሪዎችን ለማነሳሳት አርአያ እና ስኬታማ ሰዎችን መጋበዝ።">
+                        Inviting role models...
+                    </p>
+                </div>
+                <div class="activity-card animate-card">
+                    <i class="fas fa-flag activity-icon"></i>
+                    <h3 data-en="National & Heritage Events" data-am="ብሔራዊ እና የቅርስ ዝግጅቶች">National & Heritage Events</h3>
+                    <p data-en="Honoring Ethiopian heroes, thinkers, and culture through dedicated discussion platforms."
+                       data-am="የኢትዮጵያ ጀግኖችን፣ አሳቢዎችን እና ባህልን በውይይት መድረኮች ማክበር።">
+                        Honoring Ethiopian heroes...
+                    </p>
+                </div>
+                <div class="activity-card animate-card">
+                    <i class="fas fa-handshake-angle activity-icon"></i>
+                    <h3 data-en="Peace & Awareness Dialogues" data-am="የሰላም እና የግንዛቤ ውይይቶች">Peace & Awareness Dialogues</h3>
+                    <p data-en="In collaboration with partners like Red Cross, USAID, and Transparency International."
+                       data-am="ከቀይ መስቀል፣ ዩኤስኤአይዲ እና ትራንስፓረንሲ ኢንተርናሽናል ከመሳሰሉ አጋሮች ጋር በመተባበር።">
+                        In collaboration with partners...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Branches Section -->
+    <section class="discussion-branches" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title" data-en="Types of Discussions" data-am="የውይይት ዓይነቶች">Types of Discussions</h2>
+            <div class="types-grid">
+                <div class="type-card animate-card">
+                    <div class="type-icon">📖</div>
+                    <h3 data-en="Philosophical" data-am="ፍልስፍናዊ">Philosophical</h3>
+                    <p data-en="Exploring critical thinking, ethics, and the depths of human existence."
+                       data-am="ወሳኝ አስተሳሰብን፣ ስነምግባርን እና የሰውን ልጅ ህልውና መመርመር።">
+                        Exploring critical thinking...
+                    </p>
+                </div>
+                <div class="type-card animate-card">
+                    <div class="type-icon">🧠</div>
+                    <h3 data-en="Psychological" data-am="ስነ-ልቦናዊ">Psychological</h3>
+                    <p data-en="Understanding behavior, emotions, and the keys to personal growth."
+                       data-am="ባህሪን፣ ስሜቶችን እና የግል እድገት ቁልፎችን መረዳት።">
+                        Understanding behavior...
+                    </p>
+                </div>
+                <div class="type-card animate-card">
+                    <div class="type-icon">✝️☪️✡️</div>
+                    <h3 data-en="Religious" data-am="ሃይማኖታዊ">Religious</h3>
+                    <p data-en="Fostering interfaith dialogues, spiritual values, and religion's role in society."
+                       data-am="የሃይማኖቶች ውይይትን፣ መንፈሳዊ እሴቶችን እና የሃይማኖትን ሚና በህብረተሰብ ውስጥ ማሳደግ።">
+                        Fostering interfaith dialogues...
+                    </p>
+                </div>
+                <div class="type-card animate-card">
+                    <div class="type-icon">🔬</div>
+                    <h3 data-en="Scientific" data-am="ሳይንሳዊ">Scientific</h3>
+                    <p data-en="Debating new discoveries, technological advancements, and innovation."
+                       data-am="አዳዲስ ግኝቶችን፣ የቴክኖሎጂ እድገቶችን እና ፈጠራን መከራከር።">
+                        Debating new discoveries...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Impact" data-am="የእኛ ተጽዕኖ">Our Impact</h2>
+            <ul class="impact-list">
+                <li class="animate-card"><i class="fas fa-check-circle"></i> <span data-en="Improves public speaking and debate skills." data-am="የህዝብ ንግግር እና የክርክር ክህሎቶችን ያሻሽላል።">Improves public speaking...</span></li>
+                <li class="animate-card"><i class="fas fa-check-circle"></i> <span data-en="Encourages rational thinking over extremism and tribalism." data-am="ከጽንፈኝነት እና ከጎሰኝነት ይልቅ ምክንያታዊ አስተሳሰብን ያበረታታል።">Encourages rational thinking...</span></li>
+                <li class="animate-card"><i class="fas fa-check-circle"></i> <span data-en="Builds a reading and reflection culture." data-am="የንባብ እና የማሰላሰል ባህልን ይገነባል።">Builds a reading culture...</span></li>
+                <li class="animate-card"><i class="fas fa-check-circle"></i> <span data-en="Inspires visionary youth leaders for a better tomorrow." data-am="ለተሻለ ነገ ባለራዕይ ወጣት መሪዎችን ያነሳሳል።">Inspires visionary leaders...</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Media Gallery Section -->
+    <section class="gallery-section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title" data-en="Gallery Highlights" data-am="የማዕከለ-ስዕላት ድምቀቶች">Gallery Highlights</h2>
+            <div class="gallery-grid">
+                <!-- Replace with actual images -->
+                <div class="gallery-item animate-card"><img src="assets/images/discussion/debate-night.jpg" alt="Debate Night"></div>
+                <div class="gallery-item animate-card"><img src="assets/images/discussion/talk-show.jpg" alt="Talk Show"></div>
+                <div class="gallery-item animate-card"><img src="assets/images/discussion/awareness-campaign.jpg" alt="Awareness Campaign"></div>
+                <div class="gallery-item animate-card"><img src="assets/images/discussion/weekly-forum.jpg" alt="Weekly Forum"></div>
+                <div class="gallery-item animate-card"><img src="assets/images/discussion/guest-speake.jpg" alt="Guest Speaker"></div>
+                <div class="gallery-item animate-card"><img src="assets/images/discussion/student-Interaction.jpg" alt="Student Interaction"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-en="Ready to Share Your Voice?" data-am="ድምጽዎን ለማጋራት ዝግጁ ነዎት?">Ready to Share Your Voice?</h2>
+            <p data-en="Become a part of our vibrant community of thinkers and debaters." 
+               data-am="የእኛ የአሳቢዎች እና ተከራካሪዎች ማህበረሰብ አካል ይሁኑ።">
+                Become a part of our vibrant community...
+            </p>
+            <a href="join.html" class="btn btn-primary btn-large" data-en="Join the Discussion" data-am="ውይይቱን ይቀላቀሉ">Join the Discussion</a>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="footer">
+        <!-- Add the same footer code from index.html here -->
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

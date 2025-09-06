@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RVC Partners – Hawassa University, Red Cross, Wisdom of DAMA, local & international collaborators for student empowerment.">
+  <title>Partners - RVC | አጋሮች - አርቪሲ</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+<body>
+  <!-- Navbar -->
+     <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logo.png" alt="RVC Logo" class="logo">
+        <span class="brand-text" data-en="RVC" data-am="አርቪሲ">RVC</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" data-en="Home" data-am="መነሻ">Home</a></li>
+        <li><a href="about.html" data-en="About" data-am="ስለ እኛ">About</a></li>
+        <li><a href="events.html" data-en="Events" data-am="ዝግጅቶች">Events</a></li>
+        <li><a href="partners.html" class="active" data-en="Partners" data-am="አጋሮች">Partners</a></li>
+        <li><a href="contact.html" data-en="Contact" data-am="አድራሻ">Contact</a></li>
+        <li><a href="join.html" class="btn-join" data-en="Join Us" data-am="ተቀላቀሉን">Join Us</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button id="langToggle" class="lang-btn">
+          <span class="lang-text">EN</span> <i class="fas fa-globe"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero -->
+  <section class="page-hero partners-hero">
+    <div class="container">
+      <h1 class="page-title" data-en="Our Partners" data-am="አጋሮቻችን">Our Partners</h1>
+      <p class="page-intro"
+         data-en="We proudly collaborate with academic institutions, humanitarian organizations, and cultural networks who empower youth with us."
+         data-am="ከወጣቶችን የሚያበረታቱ ትምህርታዊና ማህበራዊ ድርጅቶች ጋር በኩል መተባበር እንቀርባለን።">
+        Partners empower our mission.
+      </p>
+    </div>
+  </section>
+
+  <!-- Partners Grid -->
+  <section class="partners-grid">
+    <div class="container">
+      <h2 class="section-title" data-en="Institutional & Strategic Partners" data-am="የተቋማዊ እና የስትራቴጂ አጋሮች">Institutional & Strategic Partners</h2>
+      <div class="logo-grid">
+        <!-- Replace placeholders with actual logos (PNG/SVG) -->
+        <div class="logo-card"><img src="assets/images/partners/hawassa-university.jpg" alt="Hawassa University"><p>Hawassa University</p></div>
+         <div class="logo-card"><img src="assets/images/partners/eyob-book-zone.jpg" alt="Eyob Book Zone"><p>Eyob Book Zone</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Partnerships Matter -->
+  <section class="impact-section" style="background-color: var(--light-gray);">
+    <div class="container">
+      <h2 class="section-title" data-en="Why Partnerships Matter" data-am="አጋሮች ለምን አስፈላጊ ናቸው">Why Partnerships Matter</h2>
+      <ul class="impact-list">
+        <li><i class="fas fa-check-circle"></i> 
+          <span data-en="Extend RVC’s impact to communities." data-am="የአርቪሲን ተጽዕኖ ወደ ማህበረሰብ ያደርሳል።"></span>
+        </li>
+        <li><i class="fas fa-check-circle"></i> 
+          <span data-en="Provide resources, mentorship, and global exposure." data-am="ሀብት፣ ምክርና ዓለም አቀፍ ፍቅር ይሰጣሉ።"></span>
+        </li>
+        <li><i class="fas fa-check-circle"></i> 
+          <span data-en="Strengthen academic, cultural, and humanitarian values." data-am="ትምህርታዊ፣ ባህላዊና ማህበራዊ ዋጋዎችን ያጠናክራል።"></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-en="Want to Partner with RVC?" data-am="ከአርቪሲ ጋር መተባበር ትፈልጋለህ?">Want to Partner?</h2>
+      <p data-en="We welcome institutions and organizations to collaborate with us in empowering Ethiopian youth."
+         data-am="የኢትዮጵያን ወጣቶች ለማበረታታት ከእኛ ጋር እንዲተባበሩ ተቋማትን እና ድርጅቶችን እንቀበላለን።">We welcome collaboration</p>
+      <a href="contact.html" class="btn btn-primary btn-large" data-en="Become a Partner" data-am="አጋር ይሁኑ">Become a Partner</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- same footer as others -->
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { RVC.updateLanguage(); });
+  </script>
+</body>
+</html>

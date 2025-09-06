@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - RVC | አድራሻ - አርቪሲ</title>
+    
+    <!-- Same head links as index.html -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <style>
+        .contact-hero {
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-gold));
+            padding: 8rem 0 4rem;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+        
+        .contact-form-section {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0,86,179,0.1);
+        }
+        
+        .contact-info-section {
+            padding: 2rem;
+        }
+        
+        .info-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--primary-gold));
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/images/logo.png" alt="RVC Logo" class="logo">
+                <span class="brand-text" data-en="RVC" data-am="አርቪሲ">RVC</span>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-am="መነሻ">Home</a></li>
+                <li><a href="about.html" data-en="About" data-am="ስለ እኛ">About</a></li>
+                <li class="dropdown">
+                    <a href="#" data-en="Wings" data-am="ክንፎች">Wings <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="discussion.html" data-en="Discussion" data-am="ውይይት">Discussion</a></li>
+                        <li><a href="charity.html" data-en="Charity" data-am="በጎ አድራጎት">Charity</a></li>
+                        <li><a href="book-review.html" data-en="Book Review" data-am="መጽሐፍ ግምገማ">Book Review</a></li>
+                        <li><a href="entertainment.html" data-en="Entertainment" data-am="መዝናኛ">Entertainment</a></li>
+                    </ul>
+                </li>
+                <li><a href="events.html" data-en="Events" data-am="ዝግጅቶች">Events</a></li>
+                <li><a href="partners.html" data-en="Partners" data-am="አጋሮች">Partners</a></li>
+                <li><a href="contact.html" data-en="Contact" data-am="አድራሻ">Contact</a></li>
+                <li><a href="join.html" class="btn-join" data-en="Join Us" data-am="ተቀላቀሉን">Join Us</a></li>
+            </ul>
+            
+            <!-- Language Toggle -->
+            <div class="lang-toggle">
+                <button id="langToggle" class="lang-btn">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-globe"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Same navigation as index.html -->
+    <nav class="navbar">
+        <!-- Navigation content here -->
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <h1 data-en="Get in Touch" data-am="ያግኙን">Get in Touch</h1>
+        <p data-en="We'd love to hear from you" data-am="ከእርስዎ መስማት እንወዳለን">We'd love to hear from you</p>
+    </section>
+
+    <!-- Contact Content -->
+    <div class="contact-container">
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+            <h2 data-en="Send us a Message" data-am="መልእክት ይላኩልን">Send us a Message</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name" data-en="Your Name" data-am="ስምዎ">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" data-en="Email Address" data-am="ኢሜል አድራሻ">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject" data-en="Subject" data-am="ርዕሰ ጉዳይ">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" data-en="Message" data-am="መልእክት">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" data-en="Send Message" data-am="መልእክት ላክ">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-section">
+            <div class="info-card">
+                <h3 data-en="Contact Information" data-am="የአድራሻ መረጃ">Contact Information</h3>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4 data-en="Address" data-am="አድራሻ">Address</h4>
+                        <p data-en="Hawassa University, Main Campus, Hawassa, Ethiopia" 
+                           data-am="ሐዋሳ ዩኒቨርሲቲ፣ ዋና ካምፓስ፣ ሐዋሳ፣ ኢትዮጵያ">
+                            Hawassa University, Main Campus<br>
+                            Hawassa, Ethiopia
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4 data-en="Phone" data-am="ስልክ">Phone</h4>
+                        <p>+251-912-345-678</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4 data-en="Email" data-am="ኢሜል">Email</h4>
+                        <p>info@rvc-hawassa.org</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4 data-en="Office Hours" data-am="የቢሮ ሰዓት">Office Hours</h4>
+                        <p data-en="Monday - Friday: 8:00 AM - 5:00 PM" 
+                           data-am="ሰኞ - ዓርብ: 8:00 AM - 5:00 PM">
+                            Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: 9:00 AM - 12:00 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="info-card">
+                <h3 data-en="Follow Us" data-am="ይከተሉን">Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                   <a href="https://t.me/RvcClub" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                   <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map -->
+    <div class="container">
+        <h2 class="section-title" data-en="Find Us on Map" data-am="በካርታ ላይ ያግኙን">Find Us on Map</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0997744559!2d38.4889!3d7.0467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17b14f7d6d6f7a7b%3A0x9d9d9d9d9d9d9d9d!2sHawassa%20University!5e0!3m2!1sen!2set!4v1234567890123" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="assets/images/logo.png" alt="RVC Logo" class="footer-logo">
+                    <p class="footer-slogan" data-en="A Better Generation for a Better Ethiopia" 
+                       data-am="የተሻለ ትውልድ ለተሻለች ኢትዮጵያ">
+                        A Better Generation for a Better Ethiopia
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/RvcClub" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 data-en="Quick Links" data-am="ፈጣን ማስፈንጠሪያዎች">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html" data-en="About Us" data-am="ስለ እኛ">About Us</a></li>
+                        <li><a href="events.html" data-en="Events" data-am="ዝግጅቶች">Events</a></li>
+                        <li><a href="join.html" data-en="Join Us" data-am="ተቀላቀሉን">Join Us</a></li>
+                        <li><a href="contact.html" data-en="Contact" data-am="አድራሻ">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 data-en="Our Wings" data-am="የእኛ ክንፎች">Our Wings</h4>
+                    <ul class="footer-links">
+                        <li><a href="discussion.html" data-en="Discussion" data-am="ውይይት">Discussion</a></li>
+                        <li><a href="charity.html" data-en="Charity" data-am="በጎ አድራጎት">Charity</a></li>
+                        <li><a href="book-review.html" data-en="Book Review" data-am="መጽሐፍ ግምገማ">Book Review</a></li>
+                        <li><a href="entertainment.html" data-en="Entertainment" data-am="መዝናኛ">Entertainment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 data-en="Contact Info" data-am="የአድራሻ መረጃ">Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@rvcclub.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 
+                            <span data-en="Hawassa University, Ethiopia" data-am="ሐዋሳ ዩኒቨርሲቲ፣ ኢትዮጵያ">
+                                Hawassa University, Ethiopia
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 RVC - Reasonable Visionary's Collection. 
+                   <span data-en="All rights reserved." data-am="መብቱ በሕግ የተጠበቀ ነው።">All rights reserved.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Initialize form validation
+        RVC.validateForm('contactForm');
+    </script>
+</body>
+</html>
